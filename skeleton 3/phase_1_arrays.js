@@ -28,5 +28,18 @@ Array.prototype.twoSum = function () {
     return sumArray;
 }
 
+Array.prototype.transpose = function () {
+    let someArray = [];
+    
 
+    for (let i = 0; i < this.length; i++) {
+            let innerArray = [];
+
+        for (let j = 0; j < this.length; j++) {
+            innerArray.push(this[j][i]);
+        }
+      someArray.push(innerArray); 
+    }
+    return someArray;
+}
 
